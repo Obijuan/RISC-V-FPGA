@@ -1,21 +1,37 @@
-##-- Riscv toolchain path
+##-- Directorio donde esta instalada la toolchain de Riscv
 RISCV = /opt/riscv32i/bin
-FIRMWARE = 01-leds
+
+#-- Opcion de Arquitectura
+ARCH = -march=rv32im
+
+#-- Opciones de compilacion
+OPTIONS = -Wl,-Bstatic,-T,sections.lds,--strip-debug -ffreestanding -nostdlib
+
+#-- Compilador
+GCC = $(RISCV)/riscv32-unknown-elf-gcc $(ARCH)
 
 
+E01 = 01-leds
+E02 = 02-count
 
-prog: $(FIRMWARE).bin
-	iceprog -o 1M $(FIRMWARE).bin
+$(E01): $(E01).bin
+	iceprog -o 1M $<
 
-$(FIRMWARE).elf: sections.lds $(FIRMWARE).s
-	$(RISCV)/riscv32-unknown-elf-gcc -march=rv32im -Wl,-Bstatic,-T,sections.lds,--strip-debug -ffreestanding -nostdlib -o $(FIRMWARE).elf $(FIRMWARE).s
+$(E02): $(E02).bin
+	iceprog -o 1M $<
 
-$(FIRMWARE).bin: $(FIRMWARE).elf
-	$(RISCV)/riscv32-unknown-elf-objcopy -O binary $(FIRMWARE).elf $(FIRMWARE).bin
+##-- Crear el ejecutable a partir el fichero ensamblador
+%.elf : %.s
+	$(GCC) $(OPTIONS) -o $@ $<
+
+
+##-- Crear el fichero binary para grabar en la flash
+%.bin : %.elf
+	$(RISCV)/riscv32-unknown-elf-objcopy -O binary $< $@
 
 # ---- Clean ----
 
 clean:
-	rm -f $(FIRMWARE).elf $(FIRMWARE).hex $(FIRMWARE).bin
+	rm -f *.elf *.hex *.bin
 
-.PHONY: prog
+.PHONY: $(E01)
