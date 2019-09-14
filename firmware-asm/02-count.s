@@ -1,4 +1,4 @@
-.section .text
+	.text
 
 #--- Hola Mundo para Risc-V
 #--- Sacar un valor por los LEDs
