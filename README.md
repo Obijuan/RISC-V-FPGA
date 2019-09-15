@@ -6,7 +6,7 @@
 
 * Open the **demo.ice** file with Icestudio
 * Connect the Alhambra-II board (or compatible) and upload the design
-* It will take around 2min to sinthesize and upload to the board
+* It will take around 6min to sinthesize and upload to the board
 * The system is ready for executing your firmware!
 
 ### Testing the firmaware in C
@@ -20,3 +20,8 @@
 * go to the firmware-asm folder
 * Execute make
 * You should see a value in the LEDs
+
+## Credits
+
+It is based on the picorv32 by Clifford Wolf
+https://github.com/cliffordwolf/picorv32
