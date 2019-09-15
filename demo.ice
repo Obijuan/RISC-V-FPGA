@@ -12,21 +12,22 @@
     "graph": {
       "blocks": [
         {
-          "id": "630eaf24-193c-40ab-8707-70d455994007",
-          "type": "basic.output",
+          "id": "03d5609b-74ed-4d11-9eb2-828cd4d8c90e",
+          "type": "basic.inputLabel",
           "data": {
-            "name": "",
+            "blockColor": "fuchsia",
+            "name": "iomem_valid",
             "pins": [
               {
                 "index": "0",
-                "name": "TX",
-                "value": "61"
+                "name": "",
+                "value": ""
               }
             ],
-            "virtual": false
+            "virtual": true
           },
           "position": {
-            "x": 2040,
+            "x": 2096,
             "y": 104
           }
         },
@@ -48,66 +49,6 @@
           "position": {
             "x": 840,
             "y": 112
-          }
-        },
-        {
-          "id": "03d5609b-74ed-4d11-9eb2-828cd4d8c90e",
-          "type": "basic.inputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "iomem_valid",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": 2112,
-            "y": 160
-          }
-        },
-        {
-          "id": "274738ec-474e-40b3-b699-9eff345a0b0d",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "resetn",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": 1312,
-            "y": 168
-          }
-        },
-        {
-          "id": "8ee00b12-eeb3-4152-8758-7a883f5f8437",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "iomem_valid",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": -64,
-            "y": 176
           }
         },
         {
@@ -142,7 +83,47 @@
             "virtual": true
           },
           "position": {
-            "x": 2120,
+            "x": 2112,
+            "y": 168
+          }
+        },
+        {
+          "id": "8ee00b12-eeb3-4152-8758-7a883f5f8437",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "iomem_valid",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": -64,
+            "y": 176
+          }
+        },
+        {
+          "id": "274738ec-474e-40b3-b699-9eff345a0b0d",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "resetn",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1312,
             "y": 216
           }
         },
@@ -200,62 +181,6 @@
           "position": {
             "x": 864,
             "y": 224
-          }
-        },
-        {
-          "id": "8a7e3fcb-97bf-400a-886f-f69111b83047",
-          "type": "basic.input",
-          "data": {
-            "name": "",
-            "pins": [
-              {
-                "index": "0",
-                "name": "RX",
-                "value": "62"
-              }
-            ],
-            "virtual": false,
-            "clock": false
-          },
-          "position": {
-            "x": 1312,
-            "y": 232
-          }
-        },
-        {
-          "id": "516af4d3-8842-4d86-874e-3e7c5d915067",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "iomem_wstrb",
-            "range": "[3:0]",
-            "pins": [
-              {
-                "index": "3",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "2",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "1",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": -64,
-            "y": 256
           }
         },
         {
@@ -430,16 +355,71 @@
             "virtual": true
           },
           "position": {
-            "x": 2144,
-            "y": 272
+            "x": 2128,
+            "y": 224
           }
         },
         {
-          "id": "8591dfde-1594-4b32-9f0a-3b655d3b4807",
+          "id": "630eaf24-193c-40ab-8707-70d455994007",
+          "type": "basic.output",
+          "data": {
+            "name": "",
+            "pins": [
+              {
+                "index": "0",
+                "name": "TX",
+                "value": "61"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 3384,
+            "y": 232
+          }
+        },
+        {
+          "id": "516af4d3-8842-4d86-874e-3e7c5d915067",
           "type": "basic.outputLabel",
           "data": {
             "blockColor": "fuchsia",
-            "name": "iomem_ready",
+            "name": "iomem_wstrb",
+            "range": "[3:0]",
+            "pins": [
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": -64,
+            "y": 256
+          }
+        },
+        {
+          "id": "669ef8e3-18f5-40b3-8b53-cd46b788bf4e",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "resetn",
             "pins": [
               {
                 "index": "0",
@@ -450,8 +430,8 @@
             "virtual": true
           },
           "position": {
-            "x": 1272,
-            "y": 288
+            "x": 2496,
+            "y": 264
           }
         },
         {
@@ -626,8 +606,48 @@
             "virtual": true
           },
           "position": {
-            "x": 2136,
-            "y": 328
+            "x": 2128,
+            "y": 288
+          }
+        },
+        {
+          "id": "8a7e3fcb-97bf-400a-886f-f69111b83047",
+          "type": "basic.input",
+          "data": {
+            "name": "",
+            "pins": [
+              {
+                "index": "0",
+                "name": "RX",
+                "value": "62"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": 2496,
+            "y": 320
+          }
+        },
+        {
+          "id": "8591dfde-1594-4b32-9f0a-3b655d3b4807",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "iomem_ready",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1256,
+            "y": 320
           }
         },
         {
@@ -827,11 +847,30 @@
           }
         },
         {
-          "id": "02a86892-61bb-4561-af53-a3127214a84e",
-          "type": "basic.outputLabel",
+          "id": "c7c5e1fc-1bc4-4fcf-a7cb-0290bbad7f39",
+          "type": "basic.output",
+          "data": {
+            "name": "",
+            "pins": [
+              {
+                "index": "0",
+                "name": "SS",
+                "value": "71"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 2088,
+            "y": 352
+          }
+        },
+        {
+          "id": "1868db4c-0bf8-4ae1-b2f6-478f021121f3",
+          "type": "basic.inputLabel",
           "data": {
             "blockColor": "fuchsia",
-            "name": "iomem_rdata",
+            "name": "simpleuart_reg_div_do",
             "range": "[31:0]",
             "pins": [
               {
@@ -998,27 +1037,63 @@
             "virtual": true
           },
           "position": {
-            "x": 1248,
+            "x": 3448,
             "y": 352
           }
         },
         {
-          "id": "c7c5e1fc-1bc4-4fcf-a7cb-0290bbad7f39",
+          "id": "80b42439-6fc8-47ad-b85c-aac750c5e327",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "reg_div_we",
+            "range": "[3:0]",
+            "pins": [
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2464,
+            "y": 384
+          }
+        },
+        {
+          "id": "7e29eb58-12c9-436e-802f-c8c312804c45",
           "type": "basic.output",
           "data": {
             "name": "",
             "pins": [
               {
                 "index": "0",
-                "name": "SS",
-                "value": "71"
+                "name": "SCK",
+                "value": "70"
               }
             ],
             "virtual": false
           },
           "position": {
-            "x": 2072,
-            "y": 384
+            "x": 2080,
+            "y": 408
           }
         },
         {
@@ -1198,21 +1273,354 @@
           }
         },
         {
-          "id": "7e29eb58-12c9-436e-802f-c8c312804c45",
-          "type": "basic.output",
+          "id": "02a86892-61bb-4561-af53-a3127214a84e",
+          "type": "basic.outputLabel",
           "data": {
-            "name": "",
+            "blockColor": "fuchsia",
+            "name": "iomem_rdata",
+            "range": "[31:0]",
             "pins": [
               {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
                 "index": "0",
-                "name": "SCK",
-                "value": "70"
+                "name": "",
+                "value": ""
               }
             ],
-            "virtual": false
+            "virtual": true
           },
           "position": {
-            "x": 2072,
+            "x": 1240,
+            "y": 416
+          }
+        },
+        {
+          "id": "1b6c24d3-ffab-411c-8052-0cef8178507e",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "mem_wdata",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2456,
             "y": 440
           }
         },
@@ -1393,6 +1801,202 @@
           }
         },
         {
+          "id": "99e403d3-2056-4800-a17d-43b0123fcb48",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "flash_io0_oe",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2088,
+            "y": 472
+          }
+        },
+        {
+          "id": "6e0c78f3-34d9-4b61-a877-8c90349e7717",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "simpleuart_reg_dat_do",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 3448,
+            "y": 472
+          }
+        },
+        {
           "id": "431a4346-b8d9-4d08-8b12-6d6435a09994",
           "type": "basic.outputLabel",
           "data": {
@@ -1413,11 +2017,11 @@
           }
         },
         {
-          "id": "99e403d3-2056-4800-a17d-43b0123fcb48",
-          "type": "basic.inputLabel",
+          "id": "b028de35-04a6-45a6-8544-c52a4b35ec72",
+          "type": "basic.outputLabel",
           "data": {
             "blockColor": "fuchsia",
-            "name": "flash_io0_oe",
+            "name": "reg_dat_we",
             "pins": [
               {
                 "index": "0",
@@ -1428,8 +2032,8 @@
             "virtual": true
           },
           "position": {
-            "x": 2088,
-            "y": 496
+            "x": 2464,
+            "y": 504
           }
         },
         {
@@ -1449,7 +2053,27 @@
           },
           "position": {
             "x": 2088,
-            "y": 552
+            "y": 536
+          }
+        },
+        {
+          "id": "b8f13f78-0c05-44d1-8b68-7fca65e1f299",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "reg_dat_re",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2464,
+            "y": 560
           }
         },
         {
@@ -1493,26 +2117,6 @@
           }
         },
         {
-          "id": "55f54615-620a-4f31-b4bb-7c3f9fb4ef3c",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "flash_io0_di",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": 1264,
-            "y": 600
-          }
-        },
-        {
           "id": "a533e878-e78e-43ef-8533-baed042b8e41",
           "type": "basic.inputLabel",
           "data": {
@@ -1529,7 +2133,223 @@
           },
           "position": {
             "x": 2088,
-            "y": 608
+            "y": 592
+          }
+        },
+        {
+          "id": "89177e0d-e119-428e-b31f-61eaa920b0ed",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "simpleuart_reg_dat_wait",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 3416,
+            "y": 592
+          }
+        },
+        {
+          "id": "9ed2c4b0-206b-4ae8-a2bd-f4f81370b63f",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "mem_wdata",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2456,
+            "y": 616
+          }
+        },
+        {
+          "id": "55f54615-620a-4f31-b4bb-7c3f9fb4ef3c",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "flash_io0_di",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1256,
+            "y": 640
           }
         },
         {
@@ -1553,26 +2373,6 @@
           }
         },
         {
-          "id": "75bf8194-49b9-412f-bfd0-f8007ec4b25d",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "flash_io1_di",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": 1264,
-            "y": 664
-          }
-        },
-        {
           "id": "7f5c368f-a6c5-4bea-a1e3-aa21f0689648",
           "type": "basic.inputLabel",
           "data": {
@@ -1588,8 +2388,8 @@
             "virtual": true
           },
           "position": {
-            "x": 2080,
-            "y": 664
+            "x": 2096,
+            "y": 656
           }
         },
         {
@@ -1613,6 +2413,62 @@
           }
         },
         {
+          "id": "75bf8194-49b9-412f-bfd0-f8007ec4b25d",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "flash_io1_di",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1256,
+            "y": 712
+          }
+        },
+        {
+          "id": "409d5dd9-0145-4c7b-973a-3a73548a4310",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "wen",
+            "range": "[3:0]",
+            "pins": [
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2080,
+            "y": 720
+          }
+        },
+        {
           "id": "87dbc972-7bc8-4447-ba9e-2e8eb7486730",
           "type": "basic.outputLabel",
           "data": {
@@ -1630,6 +2486,911 @@
           "position": {
             "x": -48,
             "y": 728
+          }
+        },
+        {
+          "id": "a211743a-9913-4eff-8afe-b41d9d56b69f",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "addr",
+            "range": "[21:0]",
+            "pins": [
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2080,
+            "y": 776
+          }
+        },
+        {
+          "id": "90d6d3dd-7d69-4f3d-ab38-cef4f6131d26",
+          "type": "basic.output",
+          "data": {
+            "name": "",
+            "pins": [
+              {
+                "index": "0",
+                "name": "MOSI",
+                "value": "67"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 872,
+            "y": 792
+          }
+        },
+        {
+          "id": "8bffebb6-9fb5-4470-9a73-f745ab1ed898",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "ram_rdata",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1256,
+            "y": 792
+          }
+        },
+        {
+          "id": "20f88deb-7433-4e5c-adaa-2973fda2467c",
+          "type": "basic.input",
+          "data": {
+            "name": "",
+            "pins": [
+              {
+                "index": "0",
+                "name": "MISO",
+                "value": "68"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": -8,
+            "y": 808
+          }
+        },
+        {
+          "id": "a6fe7e60-c47e-446a-b95f-618fda9c7295",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "mem_wdata",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2120,
+            "y": 840
+          }
+        },
+        {
+          "id": "3ff7edce-646c-4128-8178-439e493e59b1",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "simpleuart_reg_div_do",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia"
+          },
+          "position": {
+            "x": 1176,
+            "y": 864
+          }
+        },
+        {
+          "id": "3fe2de33-1e20-484a-bcf2-c76d5a9862fa",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "reg_div_we",
+            "range": "[3:0]",
+            "pins": [
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia"
+          },
+          "position": {
+            "x": 2104,
+            "y": 904
+          }
+        },
+        {
+          "id": "7d1aeb9d-4335-4441-8a7a-6ef2c21ec95a",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "simpleuart_reg_dat_do",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1168,
+            "y": 944
           }
         },
         {
@@ -1683,47 +3444,68 @@
             "virtual": false
           },
           "position": {
-            "x": 1872,
-            "y": 792
+            "x": 496,
+            "y": 952
           }
         },
         {
-          "id": "90d6d3dd-7d69-4f3d-ab38-cef4f6131d26",
-          "type": "basic.output",
+          "id": "bb92bd31-ba09-4ad4-aaa3-d5ada6041136",
+          "type": "basic.inputLabel",
           "data": {
-            "name": "",
+            "blockColor": "fuchsia",
+            "name": "reg_dat_we",
             "pins": [
               {
                 "index": "0",
-                "name": "MOSI",
-                "value": "67"
+                "name": "",
+                "value": ""
               }
             ],
-            "virtual": false
+            "virtual": true
           },
           "position": {
-            "x": 872,
-            "y": 792
+            "x": 2088,
+            "y": 960
           }
         },
         {
-          "id": "20f88deb-7433-4e5c-adaa-2973fda2467c",
-          "type": "basic.input",
+          "id": "e6fda4f2-828b-4c85-ac7b-d9e451adeb96",
+          "type": "basic.outputLabel",
           "data": {
-            "name": "",
+            "blockColor": "fuchsia",
+            "name": "simpleuart_reg_dat_wait",
             "pins": [
               {
                 "index": "0",
-                "name": "MISO",
-                "value": "68"
+                "name": "",
+                "value": ""
               }
             ],
-            "virtual": false,
-            "clock": false
+            "virtual": true
           },
           "position": {
-            "x": -8,
-            "y": 808
+            "x": 1184,
+            "y": 1016
+          }
+        },
+        {
+          "id": "c30929a0-44dd-46a6-90de-2d3a0486b653",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "reg_dat_re",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 2072,
+            "y": 1024
           }
         },
         {
@@ -1778,8 +3560,523 @@
             "virtual": true
           },
           "position": {
-            "x": 1704,
-            "y": 904
+            "x": 328,
+            "y": 1064
+          }
+        },
+        {
+          "id": "b1ff4acd-d725-4381-ae8e-09ebb835522f",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "wen",
+            "range": "[3:0]",
+            "pins": [
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1064,
+            "y": 1304
+          }
+        },
+        {
+          "id": "587e179a-b945-4299-9c12-bacdc33b02e2",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "ram_rdata",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 1800,
+            "y": 1336
+          }
+        },
+        {
+          "id": "3b20bb6f-13ab-4c22-bce8-fce4bd30e24a",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "addr",
+            "range": "[21:0]",
+            "pins": [
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1064,
+            "y": 1360
+          }
+        },
+        {
+          "id": "f5e8011a-c949-449d-8518-a853e04a670e",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "mem_wdata",
+            "range": "[31:0]",
+            "pins": [
+              {
+                "index": "31",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "30",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "29",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "28",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "27",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "26",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "25",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "24",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "23",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "22",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "21",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "20",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "19",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "18",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "17",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "16",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1064,
+            "y": 1416
           }
         },
         {
@@ -1802,105 +4099,12 @@
           "id": "4d22988a-bf41-4ac3-9e4c-11097ae77f76",
           "type": "21cfcc19a4ad14c5fb5e8cfebd018ec356fe7542",
           "position": {
-            "x": 1280,
-            "y": 440
+            "x": 1256,
+            "y": 512
           },
           "size": {
             "width": 96,
             "height": 64
-          }
-        },
-        {
-          "id": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
-          "type": "basic.code",
-          "data": {
-            "code": "picosoc soc (\n\t\t.clk          (clk         ),\n\t\t.resetn       (resetn      ),\n\n\t\t.ser_tx       (ser_tx      ),\n\t\t.ser_rx       (ser_rx      ),\n\n\t\t.flash_csb    (flash_csb   ),\n\t\t.flash_clk    (flash_clk   ),\n\n\t\t.flash_io0_oe (flash_io0_oe),\n\t\t.flash_io1_oe (flash_io1_oe),\n\n\t\t.flash_io0_do (flash_io0_do),\n\t\t.flash_io1_do (flash_io1_do),\n\n\t\t.flash_io0_di (flash_io0_di),\n\t\t.flash_io1_di (flash_io1_di),\n\n\t\t.irq_5        (1'b0        ),\n\t\t.irq_6        (1'b0        ),\n\t\t.irq_7        (1'b0        ),\n\n\t\t.iomem_valid  (iomem_valid ),\n\t\t.iomem_ready  (iomem_ready ),\n\t\t.iomem_wstrb  (iomem_wstrb ),\n\t\t.iomem_addr   (iomem_addr  ),\n\t\t.iomem_wdata  (iomem_wdata ),\n\t\t.iomem_rdata  (iomem_rdata )\n\t);",
-            "params": [],
-            "ports": {
-              "in": [
-                {
-                  "name": "clk"
-                },
-                {
-                  "name": "resetn"
-                },
-                {
-                  "name": "ser_rx"
-                },
-                {
-                  "name": "iomem_ready"
-                },
-                {
-                  "name": "iomem_rdata",
-                  "range": "[31:0]",
-                  "size": 32
-                },
-                {
-                  "name": "irq_5"
-                },
-                {
-                  "name": "irq_6"
-                },
-                {
-                  "name": "irq_"
-                },
-                {
-                  "name": "flash_io0_di"
-                },
-                {
-                  "name": "flash_io1_di"
-                }
-              ],
-              "out": [
-                {
-                  "name": "ser_tx"
-                },
-                {
-                  "name": "iomem_valid"
-                },
-                {
-                  "name": "iomem_wstrb",
-                  "range": "[3:0]",
-                  "size": 4
-                },
-                {
-                  "name": "iomem_addr",
-                  "range": "[31:0]",
-                  "size": 32
-                },
-                {
-                  "name": "iomem_wdata",
-                  "range": "[31:0]",
-                  "size": 32
-                },
-                {
-                  "name": "flash_csb"
-                },
-                {
-                  "name": "flash_clk"
-                },
-                {
-                  "name": "flash_io0_oe"
-                },
-                {
-                  "name": "flash_io1_oe"
-                },
-                {
-                  "name": "flash_io0_do"
-                },
-                {
-                  "name": "flash_io1_do"
-                }
-              ]
-            }
-          },
-          "position": {
-            "x": 1472,
-            "y": 104
-          },
-          "size": {
-            "width": 504,
-            "height": 624
           }
         },
         {
@@ -1923,7 +4127,7 @@
           "id": "4bccf6d2-9809-4756-9905-f2367b073789",
           "type": "basic.info",
           "data": {
-            "info": "Demo.v (2)",
+            "info": "picosoc.v",
             "readonly": true
           },
           "position": {
@@ -1939,7 +4143,7 @@
           "id": "f985e3c7-a864-4285-99ad-1ff54ac0a16b",
           "type": "basic.code",
           "data": {
-            "code": "// @include picosoc.v\n// @include picorv32.v\n// @include spiflash.v\n// @include simpleuart.v\n// @include spimemio.v\n\nreg [5:0] reset_cnt = 0;\nassign resetn = &reset_cnt;\n\n\talways @(posedge clk) begin\n\t\treset_cnt <= reset_cnt + !resetn;\n\tend\n\n\twire flash_io0_oe, flash_io0_do, flash_io0_di;\n\twire flash_io1_oe, flash_io1_do, flash_io1_di;\n\n\tSB_IO #(\n\t\t.PIN_TYPE(6'b 1010_01),\n\t\t.PULLUP(1'b 0)\n\t) flash_io_buf [1:0] (\n\t\t.PACKAGE_PIN({flash_io1, flash_io0}),\n\t\t.OUTPUT_ENABLE({flash_io1_oe, flash_io0_oe}),\n\t\t.D_OUT_0({flash_io1_do, flash_io0_do}),\n\t\t.D_IN_0({flash_io1_di, flash_io0_di})\n\t);\n\n\treg         iomem_ready;\n\treg  [31:0] iomem_rdata;\n\n\treg [31:0] gpio;\n\tassign leds = gpio;\n\n\talways @(posedge clk) begin\n\t\tif (!resetn) begin\n\t\t\tgpio <= 0;\n\t\tend else begin\n\t\t\tiomem_ready <= 0;\n\t\t\tif (iomem_valid && !iomem_ready && iomem_addr[31:24] == 8'h 03) begin\n\t\t\t\tiomem_ready <= 1;\n\t\t\t\tiomem_rdata <= gpio;\n\t\t\t\tif (iomem_wstrb[0]) gpio[ 7: 0] <= iomem_wdata[ 7: 0];\n\t\t\t\tif (iomem_wstrb[1]) gpio[15: 8] <= iomem_wdata[15: 8];\n\t\t\t\tif (iomem_wstrb[2]) gpio[23:16] <= iomem_wdata[23:16];\n\t\t\t\tif (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];\n\t\t\tend\n\t\tend\n\tend\n\n\t",
+            "code": "// @include regs.v\n// @include picorv32.v\n// @include spimemio.v\n\nreg [5:0] reset_cnt = 0;\nassign resetn = &reset_cnt;\n\n\talways @(posedge clk) begin\n\t\treset_cnt <= reset_cnt + !resetn;\n\tend\n\n\twire flash_io0_oe, flash_io0_do, flash_io0_di;\n\twire flash_io1_oe, flash_io1_do, flash_io1_di;\n\n\tSB_IO #(\n\t\t.PIN_TYPE(6'b 1010_01),\n\t\t.PULLUP(1'b 0)\n\t) flash_io_buf [1:0] (\n\t\t.PACKAGE_PIN({flash_io1, flash_io0}),\n\t\t.OUTPUT_ENABLE({flash_io1_oe, flash_io0_oe}),\n\t\t.D_OUT_0({flash_io1_do, flash_io0_do}),\n\t\t.D_IN_0({flash_io1_di, flash_io0_di})\n\t);\n\n\treg         iomem_ready;\n\treg  [31:0] iomem_rdata;\n\n\treg [31:0] gpio;\n\tassign leds = gpio;\n\n\talways @(posedge clk) begin\n\t\tif (!resetn) begin\n\t\t\tgpio <= 0;\n\t\tend else begin\n\t\t\tiomem_ready <= 0;\n\t\t\tif (iomem_valid && !iomem_ready && iomem_addr[31:24] == 8'h 03) begin\n\t\t\t\tiomem_ready <= 1;\n\t\t\t\tiomem_rdata <= gpio;\n\t\t\t\tif (iomem_wstrb[0]) gpio[ 7: 0] <= iomem_wdata[ 7: 0];\n\t\t\t\tif (iomem_wstrb[1]) gpio[15: 8] <= iomem_wdata[15: 8];\n\t\t\t\tif (iomem_wstrb[2]) gpio[23:16] <= iomem_wdata[23:16];\n\t\t\t\tif (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];\n\t\t\tend\n\t\tend\n\tend\n\n\t",
             "params": [],
             "ports": {
               "in": [
@@ -2016,6 +4220,282 @@
           "size": {
             "width": 632,
             "height": 792
+          }
+        },
+        {
+          "id": "1817023c-781a-4e73-a09e-3a4ea8926a2e",
+          "type": "basic.code",
+          "data": {
+            "code": "localparam integer WORDS = 256;\n\nreg [31:0] mem [0:WORDS-1];\nreg [31:0] rdata;\n\n\talways @(posedge clk) begin\n\t\trdata <= mem[addr];\n\t\tif (wen[0]) mem[addr][ 7: 0] <= wdata[ 7: 0];\n\t\tif (wen[1]) mem[addr][15: 8] <= wdata[15: 8];\n\t\tif (wen[2]) mem[addr][23:16] <= wdata[23:16];\n\t\tif (wen[3]) mem[addr][31:24] <= wdata[31:24];\n\tend",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "wen",
+                  "range": "[3:0]",
+                  "size": 4
+                },
+                {
+                  "name": "addr",
+                  "range": "[21:0]",
+                  "size": 22
+                },
+                {
+                  "name": "wdata",
+                  "range": "[31:0]",
+                  "size": 32
+                }
+              ],
+              "out": [
+                {
+                  "name": "rdata",
+                  "range": "[31:0]",
+                  "size": 32
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 1256,
+            "y": 1256
+          },
+          "size": {
+            "width": 448,
+            "height": 216
+          }
+        },
+        {
+          "id": "d9621dbf-bdac-4be0-8be6-8eb46341c17d",
+          "type": "basic.info",
+          "data": {
+            "info": "RAM",
+            "readonly": true
+          },
+          "position": {
+            "x": 1440,
+            "y": 1208
+          },
+          "size": {
+            "width": 88,
+            "height": 40
+          }
+        },
+        {
+          "id": "32bf7707-3d34-406a-b213-f20857efa505",
+          "type": "basic.code",
+          "data": {
+            "code": "reg [31:0] cfg_divider;\n\n\treg [3:0] recv_state;\n\treg [31:0] recv_divcnt;\n\treg [7:0] recv_pattern;\n\treg [7:0] recv_buf_data;\n\treg recv_buf_valid;\n\n\treg [9:0] send_pattern;\n\treg [3:0] send_bitcnt;\n\treg [31:0] send_divcnt;\n\treg send_dummy;\n\n\tassign reg_div_do = cfg_divider;\n\n\tassign reg_dat_wait = reg_dat_we && (send_bitcnt || send_dummy);\n\tassign reg_dat_do = recv_buf_valid ? recv_buf_data : ~0;\n\n\talways @(posedge clk) begin\n\t\tif (!resetn) begin\n\t\t\tcfg_divider <= 1;\n\t\tend else begin\n\t\t\tif (reg_div_we[0]) cfg_divider[ 7: 0] <= reg_div_di[ 7: 0];\n\t\t\tif (reg_div_we[1]) cfg_divider[15: 8] <= reg_div_di[15: 8];\n\t\t\tif (reg_div_we[2]) cfg_divider[23:16] <= reg_div_di[23:16];\n\t\t\tif (reg_div_we[3]) cfg_divider[31:24] <= reg_div_di[31:24];\n\t\tend\n\tend\n\n\talways @(posedge clk) begin\n\t\tif (!resetn) begin\n\t\t\trecv_state <= 0;\n\t\t\trecv_divcnt <= 0;\n\t\t\trecv_pattern <= 0;\n\t\t\trecv_buf_data <= 0;\n\t\t\trecv_buf_valid <= 0;\n\t\tend else begin\n\t\t\trecv_divcnt <= recv_divcnt + 1;\n\t\t\tif (reg_dat_re)\n\t\t\t\trecv_buf_valid <= 0;\n\t\t\tcase (recv_state)\n\t\t\t\t0: begin\n\t\t\t\t\tif (!ser_rx)\n\t\t\t\t\t\trecv_state <= 1;\n\t\t\t\t\trecv_divcnt <= 0;\n\t\t\t\tend\n\t\t\t\t1: begin\n\t\t\t\t\tif (2*recv_divcnt > cfg_divider) begin\n\t\t\t\t\t\trecv_state <= 2;\n\t\t\t\t\t\trecv_divcnt <= 0;\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\t\t10: begin\n\t\t\t\t\tif (recv_divcnt > cfg_divider) begin\n\t\t\t\t\t\trecv_buf_data <= recv_pattern;\n\t\t\t\t\t\trecv_buf_valid <= 1;\n\t\t\t\t\t\trecv_state <= 0;\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\t\tdefault: begin\n\t\t\t\t\tif (recv_divcnt > cfg_divider) begin\n\t\t\t\t\t\trecv_pattern <= {ser_rx, recv_pattern[7:1]};\n\t\t\t\t\t\trecv_state <= recv_state + 1;\n\t\t\t\t\t\trecv_divcnt <= 0;\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tendcase\n\t\tend\n\tend\n\n\tassign ser_tx = send_pattern[0];\n\n\talways @(posedge clk) begin\n\t\tif (reg_div_we)\n\t\t\tsend_dummy <= 1;\n\t\tsend_divcnt <= send_divcnt + 1;\n\t\tif (!resetn) begin\n\t\t\tsend_pattern <= ~0;\n\t\t\tsend_bitcnt <= 0;\n\t\t\tsend_divcnt <= 0;\n\t\t\tsend_dummy <= 1;\n\t\tend else begin\n\t\t\tif (send_dummy && !send_bitcnt) begin\n\t\t\t\tsend_pattern <= ~0;\n\t\t\t\tsend_bitcnt <= 15;\n\t\t\t\tsend_divcnt <= 0;\n\t\t\t\tsend_dummy <= 0;\n\t\t\tend else\n\t\t\tif (reg_dat_we && !send_bitcnt) begin\n\t\t\t\tsend_pattern <= {1'b1, reg_dat_di[7:0], 1'b0};\n\t\t\t\tsend_bitcnt <= 10;\n\t\t\t\tsend_divcnt <= 0;\n\t\t\tend else\n\t\t\tif (send_divcnt > cfg_divider && send_bitcnt) begin\n\t\t\t\tsend_pattern <= {1'b1, send_pattern[9:1]};\n\t\t\t\tsend_bitcnt <= send_bitcnt - 1;\n\t\t\t\tsend_divcnt <= 0;\n\t\t\tend\n\t\tend\n\tend",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "resetn"
+                },
+                {
+                  "name": "ser_rx"
+                },
+                {
+                  "name": "reg_div_we",
+                  "range": "[3:0]",
+                  "size": 4
+                },
+                {
+                  "name": "reg_div_di",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "reg_dat_we"
+                },
+                {
+                  "name": "reg_dat_re"
+                },
+                {
+                  "name": "reg_dat_di",
+                  "range": "[31:0]",
+                  "size": 32
+                }
+              ],
+              "out": [
+                {
+                  "name": "ser_tx"
+                },
+                {
+                  "name": "reg_div_do",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "reg_dat_do",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "reg_dat_wait"
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 2672,
+            "y": 208
+          },
+          "size": {
+            "width": 640,
+            "height": 472
+          }
+        },
+        {
+          "id": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+          "type": "basic.code",
+          "data": {
+            "code": "\n`define PICORV32_REGS picosoc_regs\n`endif\n\nparameter [0:0] BARREL_SHIFTER = 1;\n\tparameter [0:0] ENABLE_MULDIV = 1;\n\tparameter [0:0] ENABLE_COMPRESSED = 1;\n\tparameter [0:0] ENABLE_COUNTERS = 1;\n\tparameter [0:0] ENABLE_IRQ_QREGS = 0;\n\n\tparameter integer MEM_WORDS = 256;\n\tparameter [31:0] STACKADDR = (4*MEM_WORDS);       // end of memory\n\tparameter [31:0] PROGADDR_RESET = 32'h 0010_0000; // 1 MB into flash\n\tparameter [31:0] PROGADDR_IRQ = 32'h 0000_0000;\n\n\treg [31:0] irq;\n\twire irq_stall = 0;\n\twire irq_uart = 0;\n\n\talways @* begin\n\t\tirq = 0;\n\t\tirq[3] = irq_stall;\n\t\tirq[4] = irq_uart;\n\t\tirq[5] = irq_5;\n\t\tirq[6] = irq_6;\n\t\tirq[7] = irq_7;\n\tend\n\n\twire mem_valid;\n\twire mem_instr;\n\twire mem_ready;\n\twire [31:0] mem_addr;\n\twire [3:0] mem_wstrb;\n\twire [31:0] mem_rdata;\n\n\twire spimem_ready;\n\twire [31:0] spimem_rdata;\n\n\treg ram_ready;\n\tassign iomem_valid = mem_valid && (mem_addr[31:24] > 8'h 01);\n\tassign iomem_wstrb = mem_wstrb;\n\tassign iomem_addr = mem_addr;\n\tassign iomem_wdata = mem_wdata;\n\n\twire spimemio_cfgreg_sel = mem_valid && (mem_addr == 32'h 0200_0000);\n\twire [31:0] spimemio_cfgreg_do;\n\n\twire        simpleuart_reg_div_sel = mem_valid && (mem_addr == 32'h 0200_0004);\n\n\twire        simpleuart_reg_dat_sel = mem_valid && (mem_addr == 32'h 0200_0008);\n\n\tassign mem_ready = (iomem_valid && iomem_ready) || spimem_ready || ram_ready || spimemio_cfgreg_sel ||\n\t\t\tsimpleuart_reg_div_sel || (simpleuart_reg_dat_sel && !simpleuart_reg_dat_wait);\n\n\tassign mem_rdata = (iomem_valid && iomem_ready) ? iomem_rdata : spimem_ready ? spimem_rdata : ram_ready ? ram_rdata :\n\t\t\tspimemio_cfgreg_sel ? spimemio_cfgreg_do : simpleuart_reg_div_sel ? simpleuart_reg_div_do :\n\t\t\tsimpleuart_reg_dat_sel ? simpleuart_reg_dat_do : 32'h 0000_0000;\n\n\tpicorv32 #(\n\t\t.STACKADDR(STACKADDR),\n\t\t.PROGADDR_RESET(PROGADDR_RESET),\n\t\t.PROGADDR_IRQ(PROGADDR_IRQ),\n\t\t.BARREL_SHIFTER(BARREL_SHIFTER),\n\t\t.COMPRESSED_ISA(ENABLE_COMPRESSED),\n\t\t.ENABLE_COUNTERS(ENABLE_COUNTERS),\n\t\t.ENABLE_MUL(ENABLE_MULDIV),\n\t\t.ENABLE_DIV(ENABLE_MULDIV),\n\t\t.ENABLE_IRQ(1),\n\t\t.ENABLE_IRQ_QREGS(ENABLE_IRQ_QREGS)\n\t) cpu (\n\t\t.clk         (clk        ),\n\t\t.resetn      (resetn     ),\n\t\t.mem_valid   (mem_valid  ),\n\t\t.mem_instr   (mem_instr  ),\n\t\t.mem_ready   (mem_ready  ),\n\t\t.mem_addr    (mem_addr   ),\n\t\t.mem_wdata   (mem_wdata  ),\n\t\t.mem_wstrb   (mem_wstrb  ),\n\t\t.mem_rdata   (mem_rdata  ),\n\t\t.irq         (irq        )\n\t);\n\n\tspimemio spimemio (\n\t\t.clk    (clk),\n\t\t.resetn (resetn),\n\t\t.valid  (mem_valid && mem_addr >= 4*MEM_WORDS && mem_addr < 32'h 0200_0000),\n\t\t.ready  (spimem_ready),\n\t\t.addr   (mem_addr[23:0]),\n\t\t.rdata  (spimem_rdata),\n\n\t\t.flash_csb    (flash_csb   ),\n\t\t.flash_clk    (flash_clk   ),\n\n\t\t.flash_io0_oe (flash_io0_oe),\n\t\t.flash_io1_oe (flash_io1_oe),\n\t\t//.flash_io2_oe (flash_io2_oe),\n\t\t//.flash_io3_oe (flash_io3_oe),\n\n\t\t.flash_io0_do (flash_io0_do),\n\t\t.flash_io1_do (flash_io1_do),\n\t\t//.flash_io2_do (flash_io2_do),\n\t\t//.flash_io3_do (flash_io3_do),\n\n\t\t.flash_io0_di (flash_io0_di),\n\t\t.flash_io1_di (flash_io1_di),\n\t\t//.flash_io2_di (flash_io2_di),\n\t\t//.flash_io3_di (flash_io3_di),\n\n\t\t.cfgreg_we(spimemio_cfgreg_sel ? mem_wstrb : 4'b 0000),\n\t\t.cfgreg_di(mem_wdata),\n\t\t.cfgreg_do(spimemio_cfgreg_do)\n\t);\n\n\t//Añadido para instanciar la uart\n\tassign reg_div_we = simpleuart_reg_div_sel ? mem_wstrb : 4'b 0000;\n    assign reg_dat_we = simpleuart_reg_dat_sel ? mem_wstrb[0] : 1'b0;\n    assign reg_dat_re = simpleuart_reg_dat_sel && !mem_wstrb;\n\n\talways @(posedge clk)\n\t\tram_ready <= mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS;\n\n    //-- Añadido para instanciar picosoc_mem\n\tassign wen = (mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS) ? mem_wstrb : 4'b0;\n    assign addr = mem_addr[23:2];\n",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "resetn"
+                },
+                {
+                  "name": "iomem_ready"
+                },
+                {
+                  "name": "iomem_rdata",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "irq_5"
+                },
+                {
+                  "name": "irq_6"
+                },
+                {
+                  "name": "irq_7"
+                },
+                {
+                  "name": "flash_io0_di"
+                },
+                {
+                  "name": "flash_io1_di"
+                },
+                {
+                  "name": "ram_rdata",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "simpleuart_reg_div_do",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "simpleuart_reg_dat_do",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "simpleuart_reg_dat_wait"
+                }
+              ],
+              "out": [
+                {
+                  "name": "iomem_valid"
+                },
+                {
+                  "name": "iomem_wstrb",
+                  "range": "[3:0]",
+                  "size": 4
+                },
+                {
+                  "name": "iomem_addr",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "iomem_wdata",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "flash_csb"
+                },
+                {
+                  "name": "flash_clk"
+                },
+                {
+                  "name": "flash_io0_oe"
+                },
+                {
+                  "name": "flash_io1_oe"
+                },
+                {
+                  "name": "flash_io0_do"
+                },
+                {
+                  "name": "flash_io1_do"
+                },
+                {
+                  "name": "wen",
+                  "range": "[3:0]",
+                  "size": 4
+                },
+                {
+                  "name": "addr",
+                  "range": "[21:0]",
+                  "size": 22
+                },
+                {
+                  "name": "mem_wdata",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "reg_div_we",
+                  "range": "[3:0]",
+                  "size": 4
+                },
+                {
+                  "name": "reg_dat_we"
+                },
+                {
+                  "name": "reg_dat_re"
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 1472,
+            "y": 104
+          },
+          "size": {
+            "width": 520,
+            "height": 984
+          }
+        },
+        {
+          "id": "eabb94f6-6ec7-4b53-8e88-6e73f95a22d3",
+          "type": "basic.info",
+          "data": {
+            "info": "simpleuart.v",
+            "readonly": true
+          },
+          "position": {
+            "x": 2880,
+            "y": 144
+          },
+          "size": {
+            "width": 136,
+            "height": 40
           }
         }
       ],
@@ -2322,6 +4802,268 @@
         },
         {
           "source": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "wen",
+            "size": 4
+          },
+          "target": {
+            "block": "409d5dd9-0145-4c7b-973a-3a73548a4310",
+            "port": "inlabel"
+          },
+          "size": 4
+        },
+        {
+          "source": {
+            "block": "b1ff4acd-d725-4381-ae8e-09ebb835522f",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "1817023c-781a-4e73-a09e-3a4ea8926a2e",
+            "port": "wen",
+            "size": 4
+          },
+          "size": 4
+        },
+        {
+          "source": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "addr",
+            "size": 22
+          },
+          "target": {
+            "block": "a211743a-9913-4eff-8afe-b41d9d56b69f",
+            "port": "inlabel"
+          },
+          "size": 22
+        },
+        {
+          "source": {
+            "block": "3b20bb6f-13ab-4c22-bce8-fce4bd30e24a",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "1817023c-781a-4e73-a09e-3a4ea8926a2e",
+            "port": "addr",
+            "size": 22
+          },
+          "size": 22
+        },
+        {
+          "source": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "mem_wdata",
+            "size": 32
+          },
+          "target": {
+            "block": "a6fe7e60-c47e-446a-b95f-618fda9c7295",
+            "port": "inlabel"
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "f5e8011a-c949-449d-8518-a853e04a670e",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "1817023c-781a-4e73-a09e-3a4ea8926a2e",
+            "port": "wdata",
+            "size": 32
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "1817023c-781a-4e73-a09e-3a4ea8926a2e",
+            "port": "rdata",
+            "size": 32
+          },
+          "target": {
+            "block": "587e179a-b945-4299-9c12-bacdc33b02e2",
+            "port": "inlabel"
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "8bffebb6-9fb5-4470-9a73-f745ab1ed898",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "ram_rdata",
+            "size": 32
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "669ef8e3-18f5-40b3-8b53-cd46b788bf4e",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "resetn"
+          }
+        },
+        {
+          "source": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "reg_div_we",
+            "size": 4
+          },
+          "target": {
+            "block": "3fe2de33-1e20-484a-bcf2-c76d5a9862fa",
+            "port": "inlabel"
+          },
+          "size": 4
+        },
+        {
+          "source": {
+            "block": "80b42439-6fc8-47ad-b85c-aac750c5e327",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "reg_div_we",
+            "size": 4
+          },
+          "size": 4
+        },
+        {
+          "source": {
+            "block": "1b6c24d3-ffab-411c-8052-0cef8178507e",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "reg_div_di",
+            "size": 32
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "reg_dat_we"
+          },
+          "target": {
+            "block": "bb92bd31-ba09-4ad4-aaa3-d5ada6041136",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "b028de35-04a6-45a6-8544-c52a4b35ec72",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "reg_dat_we"
+          }
+        },
+        {
+          "source": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "reg_dat_re"
+          },
+          "target": {
+            "block": "c30929a0-44dd-46a6-90de-2d3a0486b653",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "b8f13f78-0c05-44d1-8b68-7fca65e1f299",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "reg_dat_re"
+          }
+        },
+        {
+          "source": {
+            "block": "9ed2c4b0-206b-4ae8-a2bd-f4f81370b63f",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "reg_dat_di",
+            "size": 32
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "reg_div_do",
+            "size": 32
+          },
+          "target": {
+            "block": "1868db4c-0bf8-4ae1-b2f6-478f021121f3",
+            "port": "inlabel"
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "3ff7edce-646c-4128-8178-439e493e59b1",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "simpleuart_reg_div_do",
+            "size": 32
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "7d1aeb9d-4335-4441-8a7a-6ef2c21ec95a",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "simpleuart_reg_dat_do",
+            "size": 32
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "reg_dat_do",
+            "size": 32
+          },
+          "target": {
+            "block": "6e0c78f3-34d9-4b61-a877-8c90349e7717",
+            "port": "inlabel"
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "e6fda4f2-828b-4c85-ac7b-d9e451adeb96",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "simpleuart_reg_dat_wait"
+          }
+        },
+        {
+          "source": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "reg_dat_wait"
+          },
+          "target": {
+            "block": "89177e0d-e119-428e-b31f-61eaa920b0ed",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
             "block": "20f88deb-7433-4e5c-adaa-2973fda2467c",
             "port": "out"
           },
@@ -2362,36 +5104,6 @@
         },
         {
           "source": {
-            "block": "8a7e3fcb-97bf-400a-886f-f69111b83047",
-            "port": "out"
-          },
-          "target": {
-            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
-            "port": "ser_rx"
-          }
-        },
-        {
-          "source": {
-            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
-            "port": "ser_tx"
-          },
-          "target": {
-            "block": "630eaf24-193c-40ab-8707-70d455994007",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "4d22988a-bf41-4ac3-9e4c-11097ae77f76",
-            "port": "3d584b0a-29eb-47af-8c43-c0822282ef05"
-          },
-          "target": {
-            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
-            "port": "irq_"
-          }
-        },
-        {
-          "source": {
             "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
             "port": "flash_clk"
           },
@@ -2407,6 +5119,36 @@
           },
           "target": {
             "block": "c7c5e1fc-1bc4-4fcf-a7cb-0290bbad7f39",
+            "port": "in"
+          }
+        },
+        {
+          "source": {
+            "block": "4d22988a-bf41-4ac3-9e4c-11097ae77f76",
+            "port": "3d584b0a-29eb-47af-8c43-c0822282ef05"
+          },
+          "target": {
+            "block": "87e68648-e932-4d3c-97f6-7e909b3d2e63",
+            "port": "irq_7"
+          }
+        },
+        {
+          "source": {
+            "block": "8a7e3fcb-97bf-400a-886f-f69111b83047",
+            "port": "out"
+          },
+          "target": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "ser_rx"
+          }
+        },
+        {
+          "source": {
+            "block": "32bf7707-3d34-406a-b213-f20857efa505",
+            "port": "ser_tx"
+          },
+          "target": {
+            "block": "630eaf24-193c-40ab-8707-70d455994007",
             "port": "in"
           }
         }
