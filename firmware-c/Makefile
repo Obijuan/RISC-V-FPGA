@@ -1,6 +1,6 @@
 ##-- Riscv toolchain path
 RISCV = /opt/riscv32i/bin
-FIRMWARE = firmware-orig-counter
+FIRMWARE = firmware-test
 
 
 prog: $(FIRMWARE).bin
