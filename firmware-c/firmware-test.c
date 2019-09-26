@@ -206,11 +206,13 @@ void print_dec(uint32_t v)
 char getchar_prompt(char *prompt)
 {
 	int32_t c = -1;
+	int32_t count = 0;
 
 	uint32_t cycles_begin, cycles_now, cycles;
 	__asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
 
 	reg_leds = ~0;
+	count = 0;
 
 	if (prompt)
 		print(prompt);
@@ -222,7 +224,8 @@ char getchar_prompt(char *prompt)
 			if (prompt)
 				print(prompt);
 			cycles_begin = cycles_now;
-			reg_leds = reg_leds + 1;
+			count += 1;
+			reg_leds = count;
 		}
 		c = reg_uart_data;
 	}
@@ -555,7 +558,6 @@ void cmd_benchmark_all()
 void main()
 {
 	reg_leds = 31;
-	reg_uart_clkdiv = 104;
 	print("Booting..\n");
 
 	reg_leds = 63;
