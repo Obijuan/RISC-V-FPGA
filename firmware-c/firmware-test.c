@@ -560,8 +560,6 @@ void main()
 	reg_leds = 31;
 	print("Booting..\n");
 
-	reg_leds = 63;
-
 	reg_leds = 127;
 	while (getchar_prompt("Press ENTER to continue..\n") != '\r') { /* wait */ }
 
