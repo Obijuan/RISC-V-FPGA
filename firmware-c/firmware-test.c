@@ -557,11 +557,15 @@ void cmd_benchmark_all()
 
 void main()
 {
-	reg_leds = 31;
-	print("Booting..\n");
+	reg_leds = 0x1F;
+	//reg_uart_data = 'A';
+	//reg_uart_data = 'B';
+	print("Booting...\n\n ");
+
+	//while(1);
 
 	reg_leds = 127;
-	while (getchar_prompt("Press ENTER to continue..\n") != '\r') { /* wait */ }
+	while (getchar_prompt("Press ENTER to continue..\n ") != '\r') { /* wait */ }
 
 	print("\n");
 	print("  ____  _          ____         ____\n");
