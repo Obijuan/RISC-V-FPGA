@@ -1,12 +1,12 @@
 ##-- Riscv toolchain path
 RISCV = /opt/riscv32i/bin
-FIRMWARE = firmware-test
+FIRMWARE = test
 
 
 prog: $(FIRMWARE).bin
 	iceprog -o 1M $(FIRMWARE).bin
 
-$(FIRMWARE).elf: sections.lds start.s firmware.c
+$(FIRMWARE).elf: sections.lds start.s $(FIRMWARE).c
 	$(RISCV)/riscv32-unknown-elf-gcc -DHX8KDEMO -march=rv32im -Wl,-Bstatic,-T,sections.lds,--strip-debug -ffreestanding -nostdlib -o $(FIRMWARE).elf start.s $(FIRMWARE).c
 
 $(FIRMWARE).hex: $(FIRMWARE).elf
