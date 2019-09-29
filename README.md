@@ -14,6 +14,15 @@
 * go to the firmware-c folder
 * Execute make (It is assumed that you already have the risc-v tools installed)
 * You should see a binary counter in the LEDs
+* If you open a serial terminal (115200 bauds) you will see messages
+
+![](wiki/v1.2.0/terminal-01.png)
+
+* In this youtube video you can see it in action!
+
+[![Click to see the youtube video](http://img.youtube.com/vi/mv1SFoqzZWY/0.jpg)](https://www.youtube.com/watch?v=mv1SFoqzZWY)
+
+
 
 ### Testing the firmware in asm
 
