@@ -18,10 +18,9 @@
 
 ![](wiki/v1.2.0/terminal-01.png)
 
-* In this youtube video you can see it in action!
+* In this [youtube video](https://www.youtube.com/watch?v=mv1SFoqzZWY) you can see it in action!
 
-[![Click to see the youtube video](http://img.youtube.com/vi/mv1SFoqzZWY/0.jpg)](https://www.youtube.com/watch?v=mv1SFoqzZWY)
-
+![](wiki//v1.2.0/demo-01.gif)
 
 
 ### Testing the firmware in asm
