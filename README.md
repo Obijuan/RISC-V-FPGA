@@ -22,6 +22,8 @@
 
 ![](wiki//v1.2.0/demo-01.gif)
 
+* Pressing the "1" key will reset the counter and show the intial message again 
+
 
 ### Testing the firmware in asm
 
