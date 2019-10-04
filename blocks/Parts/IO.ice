@@ -2,9 +2,9 @@
   "version": "1.2",
   "package": {
     "name": "IO",
-    "version": "0.1",
+    "version": "0.1.1",
     "description": "Puerto de salida",
-    "author": "Juan González-Gómez",
+    "author": "Juan González-Gómez - Modificado por Diego Harosteguy (@vascodh)",
     "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22256.637%22%20height=%22422.393%22%20version=%221%22%3E%3Ctext%20style=%22line-height:0%25%22%20x=%2218.222%22%20y=%2275.656%22%20font-weight=%22400%22%20font-size=%2221.071%22%20font-family=%22sans-serif%22%20letter-spacing=%220%22%20word-spacing=%220%22%20fill=%22#00f%22%20stroke-width=%221.756%22%3E%3Ctspan%20x=%2218.222%22%20y=%2275.656%22%20style=%22line-height:1.25;-inkscape-font-specification:'sans-serif%20Bold'%22%20font-weight=%22700%22%20font-size=%22101.936%22%3EOUT%3C/tspan%3E%3C/text%3E%3Ctext%20style=%22line-height:0%25;text-align:center%22%20x=%22137.004%22%20y=%22171.758%22%20font-weight=%22400%22%20font-size=%2214.606%22%20font-family=%22sans-serif%22%20letter-spacing=%220%22%20word-spacing=%220%22%20text-anchor=%22middle%22%20fill=%22#00f%22%20stroke-width=%22.537%22%3E%3Ctspan%20x=%22137.004%22%20y=%22171.758%22%20style=%22line-height:1.25;-inkscape-font-specification:'sans-serif%20Bold';text-align:center%22%20font-weight=%22700%22%20font-size=%2270.662%22%3EPORT%3C/tspan%3E%3C/text%3E%3Cg%20transform=%22matrix(2.4991%200%200%202.4991%20-214.27%20200.775)%22%20stroke=%22green%22%20stroke-linecap=%22round%22%3E%3Ccircle%20cx=%22100.602%22%20cy=%2273.815%22%20r=%2214.559%22%20fill=%22#ececec%22%20stroke-width=%22.608%22%20stroke-linejoin=%22round%22/%3E%3Cpath%20d=%22M106.978%2082.142h-3.353V63.316H97.54v18.678h-3.652%22%20fill=%22none%22%20stroke-width=%221.521%22/%3E%3C/g%3E%3C/svg%3E"
   },
   "design": {
@@ -1360,6 +1360,25 @@
           }
         },
         {
+          "id": "ba1d44e0-d1b6-42de-a191-e9c01396f615",
+          "type": "basic.output",
+          "data": {
+            "name": "write",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1288,
+            "y": 792
+          }
+        },
+        {
           "id": "684e4f5d-3d2a-45db-9eb8-09a973dbe20e",
           "type": "basic.constant",
           "data": {
@@ -1714,6 +1733,16 @@
           "target": {
             "block": "13f83e19-e124-43cb-accb-f4ff5c8d23ff",
             "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
+          }
+        },
+        {
+          "source": {
+            "block": "13f83e19-e124-43cb-accb-f4ff5c8d23ff",
+            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
+          },
+          "target": {
+            "block": "ba1d44e0-d1b6-42de-a191-e9c01396f615",
+            "port": "in"
           }
         }
       ]
