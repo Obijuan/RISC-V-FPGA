@@ -42,7 +42,7 @@ There are two socs for using with the RARs simulador:
 * soc-rars-MMIO-1-port.ice: It have no uart and 1 output port at address 0xFFFF0000, connected to the LEDs
 * soc-rars-MMIO-2-ports.ice: The previous soc plus one additional output port, connected to the D0-D7 pins in the Alhambra II board
 
-In the firmware/soc-rars-MMIO-1/rars folder there are examples for trying. Open them with the RARs simulator, assemble and dump the code into a .bin file. Then flash it into the FPGA with iceprog tool:
+In the firmware/soc-rars-MMIO-1/rars and firmware/soc-rars-MMIO-2/rars folderS there are examples for trying. Open them with the RARs simulator, assemble and dump the code into a .bin file. Then flash it into the FPGA with iceprog tool:
 
 ```
 iceprog -o 1M file.bin
