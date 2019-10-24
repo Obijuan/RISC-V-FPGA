@@ -4,7 +4,7 @@
 
 ## Quick start
 
-* Open the **soc-demo.ice** file with Icestudio
+* Open the **soc-demo.ice** file with Icestudio (5.0 or higher)
 * Connect the Alhambra-II board (or compatible) and upload the design
 * It will take around 6min to sinthesize and upload to the board
 * The system is ready for executing your firmware!
