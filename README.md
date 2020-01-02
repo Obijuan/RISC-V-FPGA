@@ -1,3 +1,5 @@
+![](https://github.com/Obijuan/RISC-V-FPGA/raw/master/wiki/project-logo.png)
+
 # RISC-V-FPGA
   RISC-V CPU for OpenFPGAs, in Icestudio
 
