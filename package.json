@@ -1,0 +1,18 @@
+{
+  "name": "risc-v-fpga",
+  "version": "0.1.0",
+  "description": "Working with RV32I RISC-V processor",
+  "footer": "https://github.com/FPGAwars/icestudio-wiki/raw/main/Logos/fgpawars-banner.svg",
+  "keywords": ["procesor","softprocesor","RISC-V"],
+  "license": "LGPL-3.0",
+  "authors": [{
+    "name": "Juan Gonzalez-Gomez (Obijuan)",
+    "email": "",
+    "url": "https://github.com/Obijuan"
+  }],
+  "repository": {
+    "type": "git",
+    "branch": "main",
+    "url": "https://github.com/Obijuan/RISC-V-FPGA"
+  }
+}
