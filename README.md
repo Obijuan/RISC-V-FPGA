@@ -49,3 +49,9 @@ In the firmware/soc-rars-MMIO-1/rars and firmware/soc-rars-MMIO-2/rars folderS t
 ```
 iceprog -o 1M file.bin
 ```
+
+or [apio](https://github.com/FPGAwars/apio):
+
+```
+apio raw "iceprog -o 1M file.bin"
+```
