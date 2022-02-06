@@ -4,7 +4,7 @@ FIRMWARE = test
 
 
 prog: $(FIRMWARE).bin
-	iceprog -o 1M $(FIRMWARE).bin
+	apio raw "iceprog -o 1M $(FIRMWARE).bin"
 
 $(FIRMWARE).elf: sections.lds start.s $(FIRMWARE).c
 	$(RISCV)/riscv32-unknown-elf-gcc -DHX8KDEMO -march=rv32im -Wl,-Bstatic,-T,sections.lds,--strip-debug -ffreestanding -nostdlib -o $(FIRMWARE).elf start.s $(FIRMWARE).c

@@ -72,12 +72,18 @@ void menu()
 
 void main()
 {
+	char c;
+
 	reg_leds = 0x1F;
 	print("Booting...\n\n ");
 
 	reg_leds = 0x7F;
 	print("Press ENTER to continue...");
-	while (getchar_prompt(0) != '\r') { /* wait */ }
+
+	//-- Wait until /n or /r is received
+	do {
+		c = getchar_prompt(0);
+	} while (c != '\n' && c != '\r'); 
 
 	menu();
 

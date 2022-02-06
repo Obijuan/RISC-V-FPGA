@@ -7,7 +7,7 @@
 li a0, 0x03000000
 
 #-- Valor a sacar por los leds
-li a1, 0xAA
+li a1, 0x55
 
 #-- Sacar el valor por los LEDs
 sw a1, 0(a0)
